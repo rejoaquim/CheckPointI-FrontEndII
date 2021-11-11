@@ -1,0 +1,49 @@
+#lista-album {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  @media (max-width: 1280px) {
+    #lista-album {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    #lista-album {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 785px) {
+    #lista-album {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  .album {
+    background: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+  
+  .album .imagem-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .album img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .album h4 {
+    opacity: 0.5;
+  }
+  
+  .album img {
+    width: 100%;
+  }

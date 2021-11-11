@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkpoint I | Front-End II</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/album.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Integrantes do trio: Thaisa Sicco, Renan de Andrade e Juliana Rosa-->
+    <main>
+      <header>
+        <h1>Album cover maker</h1>
+        <h3><i>Gerador de capa de album de banda</i></h3>
+      </header>
+
+      <form onsubmit="criarartes(event)">
+        <input id="nome" type="text" name="nome" placeholder="Título" required/>
+        <input id="artista" type="text" name="artista" placeholder="Artista" required/>
+        <input
+          id="imagem"
+          type="text"
+          name="imagem"
+          placeholder="URL da capa"
+          required
+        />
+        <button id="botao" type="submit">Enviar</button>
+        <div>
+          <label></label>
+          <div>
+              <input type="radio" name="genero" value="rock" checked>Rock</input>
+              <input type="radio" name="genero" value="pop">Pop</input>
+              <input type="radio" name="genero" value="hiphop">Hip-Hop/R&b</input>
+              <input type="radio" name="genero" value="jazz">Jazz</input>
+          </div>
+      </div>
+      <div>
+       <input type="checkbox" name="termos" id="termos" checked>Li e concordo com os termos de uso</input>
+        </div>
+      </form>
+
+      <h2>Resultado</h2>
+      <div id="lista-album">
+        <div class="album">
+          <div class="imagem-container">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/a/a6/Capa_de_Luz_Negra.jpg"/>
+          </div> 
+          <h3>Luz negra</h3>
+          <h4>Fernanda Takai</h4>
+        </div>
+        <div class="album">
+          <div class="imagem-container">
+            <img src="https://i.scdn.co/image/ab67616d0000b2737d929edd646432e27f1c6162"/>
+          </div> 
+          <h3>Nove Luas</h3>
+          <h4>Paralamas do Sucesso</h4>
+        </div>
+        <div class="album">
+          <div class="imagem-container">
+            <img src="https://www.covercentury.com/covers/audio/b/baby-love-the-colle_the-supremes_30278119.jpg"/>
+          </div>
+
+          <h3>Baby Love - The Collection</h3>
+          <h4>The Supremes</h4>
+        </div>
+        <div class="album">
+          <div class="imagem-container">
+            <img src="https://images.genius.com/92c498fe646a33f1b3c0b21ce11ab9c2.1000x1000x1.jpg"/>
+          </div>
+          <h3>atrás/além</h3>
+          <h4>O terno</h4>
+        </div>
+      </div>
+    </main>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
